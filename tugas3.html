@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<!-- memanggil library jquery -->
+<script type="text/javascript">
+$(document).ready(function(){
+// baris code jquery akan dijalankan
+$(".b1").click(function(){
+	$("#box").fadeIn("slow");
+	// untuk menampilkan kotak
+	});
+$(".b2").click(function(){
+	$("#box").fadeOut("slow");
+	// ketika b2 diklik maka kotak akan menghilang 
+	});
+$(".b3").click(function(){
+	$("#box").fadeTo("slow",0.3);
+	// ketika b3 diklik maka kotak akan tampil transparan
+	});
+});
+</script>
+<style type="text/css">
+	#box{
+		width: 200px;
+		height: 200px;
+		background: yellow;
+		border: 2px solid black;
+	}
+	/*mengatur tampilan kotak*/
+</style>
+</head>
+<body>
+<button class="b1">Fade In</button>
+<!-- button untuk memanggil fungsi fade in -->
+<button class="b2">Fade Out</button>
+<!-- button untuk memanggil fungsi fade out -->
+<button class="b3">Fade to 0.3</button> 
+<!-- button untuk memanggil fungsi fade to 0.3-->
+<br>
+<br>
+	<div id="box"></div>
+	<!-- menampilkan kotak -->
+</body>
+</html>

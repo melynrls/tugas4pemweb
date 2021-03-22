@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.6.0.min.js"></script> 
+<!-- memanggil library jquery -->
+<script type="text/javascript">
+	$(document).ready(function(){
+	//baris kode jQuery akan dijalankan
+	$(".sembunyi").click(function(){$("#foto").hide("slow")});
+	// operasi hide untuk menyembunyikan foto 1
+	$(".tampil").click(function(){$("#foto").show("slow")});
+	// operasi show untuk menampilkan foto 1
+	$(".sembunyi1").click(function(){$("#foto1").hide("slow")});
+	// operasi hide untuk menyembunyikan foto 2
+	$(".tampil1").click(function(){$("#foto1").show("slow")});
+	// operasi hide untuk menampilkan foto 2
+	});
+</script>
+</head>
+<body>
+<button class="sembunyi">sembunyikan</button> 
+<!-- button untuk sembunyikan foto 1 -->
+<button class="tampil">tampilkan</button>
+<!-- button untuk tampilkan foto 1 -->
+<p><img id="foto" src="dream.jpg"></p>
+<!-- memanggil foto 1 -->
+<button class="sembunyi1">sembunyikan</button>
+<!-- button untuk sembunyikan foto 2 -->
+<button class="tampil1">tampilkan</button>
+<!-- button untuk tampilkan foto 2 -->
+<p><img id="foto1" src="universe.jpg"></p>
+<!-- memanggil foto 2 -->
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+   <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+   <!-- memanggil library jquery -->
+    <style type="text/css">
+        .box{
+          width: 80px;
+          height: 80px;
+          background-color: orange;
+          display: inline-block;
+          margin-left: 10px;
+    }
+    /*mengatur css tampilan awal box*/
+    </style>
+    </head>
+    <body>
+      <p>klik 2x pada setiap box untuk mengubah warnanya</p>
+      <div class="box"></div> 
+      <!-- menampilkan box ke-1  -->
+      <div class="box"></div> 
+      <!-- menampilkan box ke-2  -->
+      <div class="box"></div> 
+      <!-- menampilkan box ke-3  -->
+      <div class="box"></div>
+      <!-- menampilkan box ke-4  --> 
+    <script type="text/javascript">
+    $(document).ready(function(){
+      // baris code jquery akan dijalankan
+    $(".box").dblclick(function(){
+    $(this).css({"background-color":"red"});
+    // ketika dijalankan dan box diklik 2x, maka akan berubah warna menjadi merah
+      });
+    });
+    </script>
+    </body>
+    </html>
